@@ -1,0 +1,17 @@
+{
+  "name": "petshopinterview",
+  "description": "Выполнение тестового задания",
+  "main": "index.jsp",
+  "authors": [
+    "ablokhin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "devDependencies": {
+    "angular": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-material-icons": "^0.7.1",
+    "angular-material": "1.1.8"
+  }
+}

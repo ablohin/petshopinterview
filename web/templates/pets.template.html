@@ -1,0 +1,24 @@
+<table class="animal">
+  <tr>
+    <th>Id</th>
+    <th>Animal</th>
+    <th>Owner</th>
+    <th style="width: 1%"></th>
+  </tr>
+  <tr ng-repeat="pet in pets | orderBy: 'id'" ng-class="{odd:$odd}">
+    <td>{{pet.id}}</td>
+    <td>{{pet.animal.id}}</td>
+    <td>{{pet.owner.id}}</td>
+    <td ng-click="deletePet(pet.id)">
+      <ng-md-icon icon="delete" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="number" ng-model="pet.animal.id" min="1" ps-only-numbers/></td>
+    <td><input type="number" ng-model="pet.owner.id" min="1" ps-only-numbers/></td>
+    <td ng-click="addPet(pet)">
+      <ng-md-icon icon="add" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+</table>

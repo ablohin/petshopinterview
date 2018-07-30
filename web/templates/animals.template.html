@@ -1,0 +1,19 @@
+<table class="animal">
+  <tr>
+    <th>Id</th><th>Name</th><th>Type</th> <th style="width: 1%"></th>
+  </tr>
+  <tr ng-repeat="animal in animals | orderBy: 'id'" ng-class="{odd:$odd}">
+    <td>{{animal.id}}</td><td>{{animal.name}} </td> <td> {{animal.type}}</td>
+    <td ng-click="deleteAnimal(animal.id)">
+      <ng-md-icon icon="delete" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" ng-model="animal.name"/></td>
+    <td><input type="text" ng-model="animal.type"/></td>
+    <td ng-click="addAnimal(animal)">
+      <ng-md-icon icon="add" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+</table>

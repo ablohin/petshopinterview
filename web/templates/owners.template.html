@@ -1,0 +1,27 @@
+<table class="animal">
+  <tr>
+    <th>Id</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Middle name</th>
+    <th style="width: 1%"></th>
+  </tr>
+  <tr ng-repeat="owner in owners | orderBy: 'id'" ng-class="{odd:$odd}">
+    <td>{{owner.id}}</td>
+    <td>{{owner.firstName}}</td>
+    <td>{{owner.lastName}}</td>
+    <td>{{owner.middleName}}</td>
+    <td ng-click="deleteOwner(owner.id)">
+      <ng-md-icon icon="delete" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" ng-model="owner.firstName"/></td>
+    <td><input type="text" ng-model="owner.lastName"/></td>
+    <td><input type="text" ng-model="owner.middleName"/></td>
+    <td ng-click="addOwner(owner)">
+      <ng-md-icon icon="add" size="24" style="fill: lightgreen"></ng-md-icon>
+    </td>
+  </tr>
+</table>

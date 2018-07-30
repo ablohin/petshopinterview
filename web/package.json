@@ -1,0 +1,16 @@
+{
+  "name": "petshopinterview",
+  "version": "1.0.0",
+  "description": "Выполнение тестового задания",
+  "main": "index.jsp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ablokhin",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.11",
+    "bower": "^1.8.4",
+    "http-server": "^0.11.1"
+  }
+}

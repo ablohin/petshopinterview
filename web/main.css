@@ -1,0 +1,22 @@
+table.animal {
+  width: 90%;
+  border: 1px solid #666;
+  margin-top: 10px;
+}
+
+table th {
+  background: #009383;
+  color: #fff;
+  text-align: left;
+ }
+
+tr.odd {
+  background: #ebd3d7;
+}
+
+a {
+  margin-right: 10px;
+  background: #41f468;
+  border: 2px solid black;
+  padding: 2px;
+}
