@@ -12,6 +12,8 @@
 ######################
 # IDER Inteleji Idea
 ######################
+/classes/**
 /target/**
 /out/**
 /.idea/**
+PetshopInterview.iml
